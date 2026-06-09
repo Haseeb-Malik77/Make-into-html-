@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Pakistan Hair Salon - Karachi's premium salon for hair cutting, styling, beard grooming, facials & hair treatments. 4.9⭐ from 46+ reviews. Book your appointment today!">
+  <meta name="keywords" content="Pakistan Hair Salon, salon Karachi, hair cutting, beard styling, hair coloring, Model Colony salon, best salon Karachi">
+  <meta name="author" content="Pakistan Hair Salon">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Pakistan Hair Salon | Premium Grooming & Hair Salon">
+  <meta property="og:description" content="Experience luxury hair and beauty services in Karachi. Book your appointment now!">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Pakistan Hair Salon | Premium Hair & Grooming | 4.9⭐ Karachi</title>
+  
+  <!-- Preconnect for fast font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Fonts - Light, elegant, fast-loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 (minified CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #FFFDF9;
+      color: #2C2420;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3, h4, .serif {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* Light Luxury Color Scheme */
+    :root {
+      --cream: #FFF9F0;
+      --soft-gold: #C9A96E;
+      --warm-beige: #F5EDE3;
+      --chocolate: #4A3729;
+      --pure-white: #FFFFFF;
+      --soft-brown: #B5916E;
+      --rose-touch: #E8C9B0;
+    }
+
+    /* Navbar - Clean & Sticky */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 249, 240, 0.96);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.03);
+      border-bottom: 1px solid rgba(201, 169, 110, 0.2);
+      padding: 18px 0;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.9rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 700;
+      color: #8B5E3C;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: #C9A96E;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #4A3729;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: 0.2s;
+      letter-spacing: 0.3px;
+    }
+
+    .nav-links a:hover {
+      color: #C9A96E;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.6rem;
+      color: #8B5E3C;
+      cursor: pointer;
+    }
+
+    /* Buttons */
+    .btn-primary {
+      background: #C9A96E;
+      border: none;
+      padding: 14px 34px;
+      border-radius: 50px;
+      font-weight: 600;
+      color: white;
+      font-family: 'Inter', sans-serif;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(201, 169, 110, 0.2);
+    }
+
+    .btn-primary:hover {
+      background: #B28B55;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(201, 169, 110, 0.25);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid #C9A96E;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-weight: 500;
+      color: #8B5E3C;
+      transition: 0.25s;
+      cursor: pointer;
+    }
+
+    .btn-outline:hover {
+      background: #C9A96E;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    /* Hero Section - Beautiful Background Image */
+    .hero {
+      min-height: 88vh;
+      background: linear-gradient(107deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 100%), url('https://images.pexels.com/photos/3998427/pexels-photo-3998427.jpeg?auto=compress&cs=tinysrgb&w=1600');
+      background-size: cover;
+      background-position: center 30%;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-content {
+      max-width: 620px;
+    }
+
+    .hero h1 {
+      font-size: 4.5rem;
+      line-height: 1.2;
+      color: #FFFFFF;
+      text-shadow: 0 2px 15px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+
+    .hero-tagline {
+      font-size: 1.2rem;
+      color: rgba(255,250,240,0.95);
+      margin-bottom: 32px;
+      font-weight: 400;
+      text-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    }
+
+    .rating-badge {
+      margin-top: 28px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255,249,240,0.85);
+      backdrop-filter: blur(5px);
+      padding: 10px 20px;
+      border-radius: 60px;
+      width: fit-content;
+    }
+
+    /* Cards - Light Glass */
+    .glass-card-light {
+      background: white;
+      border-radius: 32px;
+      padding: 40px 32px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.03), 0 5px 12px rgba(0,0,0,0.05);
+      transition: all 0.35s ease;
+      border: 1px solid rgba(201,169,110,0.2);
+    }
+
+    .glass-card-light:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 45px rgba(0,0,0,0.08);
+      border-color: rgba(201,169,110,0.5);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .section-header h2 {
+      font-size: 3rem;
+      color: #3D2B1F;
+      display: inline-block;
+      border-bottom: 2px solid #C9A96E;
+      padding-bottom: 12px;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 28px;
+      padding: 36px 24px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.02);
+      border: 1px solid #F0E3D4;
+    }
+
+    .service-card:hover {
+      border-color: #C9A96E;
+      box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1);
+    }
+
+    .service-card i {
+      font-size: 2.8rem;
+      color: #C9A96E;
+      margin-bottom: 22px;
+    }
+
+    .service-card h3 {
+      font-size: 1.7rem;
+      margin-bottom: 12px;
+    }
+
+    /* Testimonial Slider */
+    .testimonial-slider {
+      overflow: hidden;
+      padding: 15px 0;
+    }
+    .testimonials-wrapper {
+      display: flex;
+      gap: 30px;
+      transition: transform 0.5s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    }
+    .testimonial-card {
+      flex: 0 0 340px;
+      background: white;
+      border-radius: 28px;
+      padding: 32px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+      border-left: 4px solid #C9A96E;
+    }
+    .stars {
+      color: #C9A96E;
+      margin-bottom: 16px;
+      font-size: 1.1rem;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 22px;
+    }
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 28px;
+      height: 280px;
+      background: #EFE5D9;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+    }
+    .contact-form input, .contact-form textarea, .contact-form select {
+      width: 100%;
+      padding: 14px 18px;
+      margin-bottom: 18px;
+      background: #FFFFFF;
+      border: 1px solid #EADBCB;
+      border-radius: 22px;
+      font-family: 'Inter', sans-serif;
+      transition: 0.2s;
+    }
+    .contact-form input:focus, .contact-form textarea:focus {
+      border-color: #C9A96E;
+      outline: none;
+    }
+    .map-container iframe {
+      width: 100%;
+      border-radius: 28px;
+      height: 280px;
+      border: 1px solid #EFE0D0;
+    }
+
+    /* Footer - Elegant Light */
+    footer {
+      background: #FDF8F2;
+      padding: 50px 0 28px;
+      margin-top: 70px;
+      border-top: 1px solid #EFE2D4;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .social-icons a {
+      color: #B28B55;
+      margin-right: 22px;
+      font-size: 1.4rem;
+      transition: 0.2s;
+    }
+    .social-icons a:hover {
+      color: #C9A96E;
+    }
+
+    /* WhatsApp float */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25D366;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      z-index: 999;
+      transition: 0.2s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+    }
+
+    /* Counters */
+    .stats-light {
+      display: flex;
+      justify-content: center;
+      gap: 65px;
+      flex-wrap: wrap;
+      margin-top: 35px;
+      text-align: center;
+    }
+    .stat-item h3 {
+      font-size: 2.5rem;
+      color: #C9A96E;
+      font-weight: 700;
+    }
+
+    /* Responsive */
+    @media (max-width: 850px) {
+      .menu-toggle { display: block; }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: #FFFDF9;
+        padding: 24px 0;
+        gap: 22px;
+      }
+      .nav-links.active { display: flex; }
+      .hero h1 { font-size: 3rem; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .container { padding: 0 20px; }
+    }
+
+    @media (max-width: 550px) {
+      .hero h1 { font-size: 2.3rem; }
+      .section-header h2 { font-size: 2.2rem; }
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    a { text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="#" class="logo">Pakistan <span>Hair Salon</span></a>
+    <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section with Beautiful Image -->
+<section id="home" class="hero">
+  <div class="container hero-content">
+    <h1>Your Crown,<br>Our Artistry</h1>
+    <p class="hero-tagline">Experience luxury grooming in Karachi — where elegance meets perfection.</p>
+    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+      <button class="btn-primary" id="bookScrollBtn">Book Appointment</button>
+      <button class="btn-outline" id="callNowHero">Call Now</button>
+    </div>
+    <div class="rating-badge">
+      <i class="fas fa-star" style="color:#C9A96E;"></i><i class="fas fa-star" style="color:#C9A96E;"></i><i class="fas fa-star" style="color:#C9A96E;"></i><i class="fas fa-star" style="color:#C9A96E;"></i><i class="fas fa-star-half-alt" style="color:#C9A96E;"></i>
+      <span><strong>4.9 Stars</strong> (46+ reviews)</span>
+    </div>
+  </div>
+</section>
+
+<!-- About + Counters -->
+<section id="about" class="container" style="margin: 70px auto;">
+  <div class="glass-card-light">
+    <div class="section-header" style="margin-bottom: 25px;">
+      <h2>Timeless Elegance</h2>
+    </div>
+    <p style="font-size: 1.1rem; text-align: center; max-width: 800px; margin: 0 auto 30px auto;">Pakistan Hair Salon is Karachi's destination for bespoke hair and grooming services. With master stylists and a passion for perfection, we craft looks that celebrate your individuality. Our obsession with detail and premium products guarantees a 5-star experience every visit.</p>
+    <div class="stats-light" id="counterSection">
+      <div class="stat-item"><h3 id="yearsCount">0</h3><p>Years of Excellence</p></div>
+      <div class="stat-item"><h3 id="clientsCount">0</h3><p>Happy Clients</p></div>
+      <div class="stat-item"><h3 id="reviewsCount">0</h3><p>5-Star Reviews</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="container" style="margin: 80px auto;">
+  <div class="section-header"><h2>Premium Services</h2></div>
+  <div class="services-grid">
+    <div class="service-card"><i class="fas fa-cut"></i><h3>Hair Cutting</h3><p>Precision & personalized cuts.</p></div>
+    <div class="service-card"><i class="fas fa-magic"></i><h3>Hair Styling</h3><p>Event & everyday styling.</p></div>
+    <div class="service-card"><i class="fas fa-beard"></i><h3>Beard Styling</h3><p>Luxury sculpting & shaping.</p></div>
+    <div class="service-card"><i class="fas fa-smile"></i><h3>Facial</h3><p>Glow-boosting organic facials.</p></div>
+    <div class="service-card"><i class="fas fa-palette"></i><h3>Hair Coloring</h3><p>Balayage, highlights & color.</p></div>
+    <div class="service-card"><i class="fas fa-spa"></i><h3>Hair Treatment</h3><p>Keratin & deep repair.</p></div>
+  </div>
+</section>
+
+<!-- Testimonials Carousel -->
+<section id="testimonials" class="container" style="margin: 70px auto;">
+  <div class="section-header"><h2>Client Stories</h2><p style="margin-top: 12px;">Rated 4.9 by our beloved clients</p></div>
+  <div class="testimonial-slider">
+    <div class="testimonials-wrapper" id="testimonialWrapper"></div>
+  </div>
+  <div style="display: flex; justify-content: center; gap: 20px; margin-top: 35px;">
+    <button class="carousel-btn" id="prevTesti" style="background:white; border:1px solid #C9A96E; padding: 8px 22px; border-radius:40px; cursor:pointer;">← Previous</button>
+    <button class="carousel-btn" id="nextTesti" style="background:white; border:1px solid #C9A96E; padding: 8px 28px; border-radius:40px; cursor:pointer;">Next →</button>
+  </div>
+</section>
+
+<!-- Gallery - All Images Fixed & Reliable -->
+<section id="gallery" class="container" style="margin: 70px auto;">
+  <div class="section-header"><h2>Our Gallery</h2></div>
+  <div class="gallery-grid" id="galleryGrid"></div>
+</section>
+
+<!-- Contact + Booking -->
+<section id="contact" class="container" style="margin: 70px auto;">
+  <div class="section-header"><h2>Reserve Your Moment</h2></div>
+  <div class="glass-card-light" style="padding: 40px;">
+    <div class="contact-grid">
+      <div>
+        <h3 style="margin-bottom: 18px; font-size: 1.7rem;">Get in Touch</h3>
+        <p><i class="fas fa-phone-alt" style="color:#C9A96E; width: 28px;"></i> <strong><a href="tel:03410293816" style="color:#4A3729;">0341 0293816</a></strong></p>
+        <p style="margin: 15px 0;"><i class="fas fa-map-marker-alt" style="color:#C9A96E;"></i> Shop no 272/A Jaffer Bagh, Model Colony Ali Chowk, Karachi, 75100</p>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?q=Model%20Colony%20Ali%20Chowk%20Karachi&t=&z=15&output=embed" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div>
+        <h3 style="margin-bottom: 18px; font-size: 1.7rem;">Book Online</h3>
+        <form id="appointmentForm" class="contact-form">
+          <input type="text" placeholder="Full name" id="fullName" required>
+          <input type="tel" placeholder="Phone number" id="phoneNum" required>
+          <input type="email" placeholder="Email address">
+          <select id="serviceSelect">
+            <option>Hair Cutting</option><option>Hair Styling</option><option>Beard Styling</option><option>Facial</option><option>Hair Coloring</option><option>Hair Treatment</option>
+          </select>
+          <textarea rows="3" placeholder="Preferred date & time (optional)"></textarea>
+          <button type="submit" class="btn-primary" style="width:100%">Request Appointment</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container footer-content">
+    <div><h3 class="logo" style="margin-bottom: 10px;">Pakistan Hair Salon</h3><p>Luxury grooming since 2012</p></div>
+    <div><h4>Quick Links</h4><ul style="list-style:none; margin-top: 10px;"><li><a href="#home" style="color:#8B5E3C;">Home</a></li><li><a href="#services" style="color:#8B5E3C;">Services</a></li><li><a href="#contact" style="color:#8B5E3C;">Contact</a></li></ul></div>
+    <div><h4>Connect</h4><div class="social-icons"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-tiktok"></i></a></div></div>
+    <div><p>© 2026 Pakistan Hair Salon — Where beauty meets artistry.</p></div>
+  </div>
+</footer>
+
+<a href="https://wa.me/923410293816" class="whatsapp-float" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+  // Smooth Counter on scroll
+  function animateCounter(element, target, duration = 1600) {
+    let start = 0, end = target, current = start, stepTime = Math.floor(duration / end);
+    if(stepTime < 10) stepTime = 10;
+    let timer = setInterval(() => {
+      current += Math.ceil((end - current) / 20);
+      if(current >= end) { element.innerText = end; clearInterval(timer); }
+      else element.innerText = current;
+    }, stepTime);
+  }
+
+  const observerOptions = { threshold: 0.4 };
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        animateCounter(document.getElementById("yearsCount"), 12, 1200);
+        animateCounter(document.getElementById("clientsCount"), 1520, 1700);
+        animateCounter(document.getElementById("reviewsCount"), 46, 1000);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+  const counterSection = document.getElementById("counterSection");
+  if(counterSection) observer.observe(counterSection);
+
+  // Testimonials data
+  const testimonialsData = [
+    { name: "Sana Kamal", text: "Absolutely phenomenal haircut! The vibe is so chic and relaxing. Highly recommended!", rating: 5 },
+    { name: "Usman Chaudhry", text: "Best beard styling in Model Colony. Attention to detail is top-tier!", rating: 5 },
+    { name: "Zara Ahmed", text: "Loved the hair coloring service. Professional and the outcome was amazing.", rating: 5 },
+    { name: "Fatima Rizvi", text: "The facial and hair treatment left me feeling like a queen. 10/10", rating: 5 },
+    { name: "Hamza Ali", text: "Classy environment, skilled stylists. Will come again!", rating: 4.9 }
+  ];
+  
+  let currentTestiIndex = 0;
+  const wrapperDiv = document.getElementById('testimonialWrapper');
+  function renderTestis() {
+    wrapperDiv.innerHTML = '';
+    testimonialsData.forEach(t => {
+      const starsFull = Math.floor(t.rating);
+      let starHtml = '';
+      for(let i=0;i<starsFull;i++) starHtml += '<i class="fas fa-star"></i>';
+      if(t.rating % 1 !== 0) starHtml += '<i class="fas fa-star-half-alt"></i>';
+      const card = document.createElement('div');
+      card.className = 'testimonial-card';
+      card.innerHTML = `<div class="stars">${starHtml}</div><p style="font-style:italic;">“${t.text}”</p><h4 style="margin-top:18px;">- ${t.name}</h4>`;
+      wrapperDiv.appendChild(card);
+    });
+    updateCarouselPosition();
+  }
+  function updateCarouselPosition() {
+    const cardElem = document.querySelector('.testimonial-card');
+    if(!cardElem) return;
+    const cardWidth = cardElem.offsetWidth + 30;
+    wrapperDiv.style.transform = `translateX(-${currentTestiIndex * cardWidth}px)`;
+  }
+  document.getElementById('prevTesti')?.addEventListener('click', () => {
+    if(currentTestiIndex > 0) currentTestiIndex--;
+    else currentTestiIndex = Math.max(0, testimonialsData.length - 3);
+    updateCarouselPosition();
+  });
+  document.getElementById('nextTesti')?.addEventListener('click', () => {
+    const maxIndex = Math.max(0, testimonialsData.length - 3);
+    if(currentTestiIndex < maxIndex) currentTestiIndex++;
+    else currentTestiIndex = 0;
+    updateCarouselPosition();
+  });
+  window.addEventListener('resize', () => updateCarouselPosition());
+  renderTestis();
+
+  // Gallery - ALL IMAGES FIXED & FAST LOADING
+  // Using high-quality, reliable salon images from Pexels (CDN, fast & stable)
+  const galleryImages = [
+    'https://images.pexels.com/photos/3998427/pexels-photo-3998427.jpeg?auto=compress&cs=tinysrgb&w=700',
+    'https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=700',
+    'https://images.pexels.com/photos/2471162/pexels-photo-2471162.jpeg?auto=compress&cs=tinysrgb&w=700',
+    'https://images.pexels.com/photos/1805599/pexels-photo-1805599.jpeg?auto=compress&cs=tinysrgb&w=700',
+    'https://images.pexels.com/photos/2584292/pexels-photo-2584292.jpeg?auto=compress&cs=tinysrgb&w=700',
+    'https://images.pexels.com/photos/4451099/pexels-photo-4451099.jpeg?auto=compress&cs=tinysrgb&w=700'
+  ];
+  const galleryGrid = document.getElementById('galleryGrid');
+  galleryGrid.innerHTML = '';
+  galleryImages.forEach(src => {
+    const div = document.createElement('div'); 
+    div.className = 'gallery-item';
+    const img = document.createElement('img'); 
+    img.src = src; 
+    img.alt = 'Pakistan Hair Salon premium style'; 
+    img.loading = 'lazy';
+    img.onerror = function() {
+      // fallback in case any specific image fails
+      this.src = 'https://images.pexels.com/photos/3998427/pexels-photo-3998427.jpeg?auto=compress&cs=tinysrgb&w=700';
+    };
+    div.appendChild(img); 
+    galleryGrid.appendChild(div);
+  });
+
+  // Mobile nav
+  const mobileBtn = document.getElementById('mobile-menu');
+  const navLinksMenu = document.getElementById('nav-links');
+  mobileBtn?.addEventListener('click', () => navLinksMenu.classList.toggle('active'));
+  document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => navLinksMenu.classList.remove('active')));
+
+  // Buttons & form
+  document.getElementById('bookScrollBtn')?.addEventListener('click', () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }));
+  document.getElementById('callNowHero')?.addEventListener('click', () => window.location.href = 'tel:03410293816');
+  const contactForm = document.getElementById('appointmentForm');
+  contactForm?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert(`✨ Thank you ${document.getElementById('fullName').value}! We'll confirm your appointment shortly.`);
+    contactForm.reset();
+  });
+
+  // set initial counters to 0
+  document.getElementById('yearsCount').innerText = "0";
+  document.getElementById('clientsCount').innerText = "0";
+  document.getElementById('reviewsCount').innerText = "0";
+</script>
+</body>
+</html>
